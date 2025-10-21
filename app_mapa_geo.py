@@ -9,7 +9,7 @@ from branca.colormap import linear
 st.set_page_config(layout="wide", page_title="Mapa Geológico de Elementos")
 
 # --- Título de la aplicación ---
-st.title('🗺️ Visualizador Geológico de Concentración de Elementos')
+st.title('🗺️ Mapa Geológico de Concentración de Elementos para la transición energética')
 st.markdown("Utiliza los filtros en el panel de la izquierda para seleccionar un elemento y los tipos de muestra a visualizar.")
 
 # --- Carga y caché de datos ---
