@@ -1,0 +1,1 @@
+Esta app de Streamlit (https://energytransitioncol.streamlit.app/) usa la base de datos geoquímicos version 2012 del Servicio Geológico Colombiano para mostrar la distribución de los elementos críticos para la transición energética en Colombia
