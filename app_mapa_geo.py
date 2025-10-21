@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 import folium
 from streamlit_folium import st_folium
 from branca.colormap import linear
@@ -27,8 +28,10 @@ def load_data(file_path):
         st.error(f"Error: El archivo '{file_path}' no se encontró. Asegúrate de que esté en la misma carpeta que la aplicación.")
         return None
 
-# Cargar el DataFrame
-df = load_data('df_transicion.csv')
+# Cargar el DataFrame usando ruta relativa al archivo (funciona en Streamlit Cloud)
+base_dir = Path(__file__).parent
+data_file = base_dir / 'df_transicion.csv'
+df = load_data(data_file)
 
 if df is not None:
     # --- Definición de elementos y tipos de muestra ---
